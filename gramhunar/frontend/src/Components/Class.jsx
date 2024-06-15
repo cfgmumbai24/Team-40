@@ -12,4 +12,4 @@ const Class = () => {
   )
 }
 
-export default Class
+export default Class;
