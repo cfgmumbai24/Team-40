@@ -4,12 +4,12 @@ import './CardContainer.css';
 
 const CardContainer = () => {
   const cardsData = [
-    { heading: "Card 1", subheading: "Subheading 1", text: "Some text for card 1." },
-    { heading: "Card 2", subheading: "Subheading 2", text: "Some text for card 2." },
-    { heading: "Card 3", subheading: "Subheading 3", text: "Some text for card 3." },
-    { heading: "Card 4", subheading: "Subheading 4", text: "Some text for card 4." },
-    { heading: "Card 5", subheading: "Subheading 5", text: "Some text for card 5." },
-    { heading: "Card 6", subheading: "Subheading 6", text: "Some text for card 6." },
+    { heading: "Activity 1", subheading: "Description About Activity 1", text: "Outcomes from Activity 1" },
+    { heading: "Activity 2", subheading: "Description About Activity 2", text: "Outcomes from Activity 2" },
+    { heading: "Activity 3", subheading: "Description About Activity 3", text: "Outcomes from Activity 3" },
+    { heading: "Activity 4", subheading: "Description About Activity 4", text: "Outcomes from Activity 4" },
+    { heading: "Activity 5", subheading: "Description About Activity 5", text: "Outcomes from Activity 5" },
+    { heading: "Activity 6", subheading: "Description About Activity 6", text: "Outcomes from Activity 6" },
   ];
 
   return (

@@ -20,7 +20,7 @@ const AddActivity = () => {
         <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img className="mx-auto h-20 w-auto" src="https://www.gramurja.org/assets/images/logo/Gram%20Urja%20logo.png" alt="Gram Urja" />
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Enter Student's Data</h2>
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Enter Classes Data</h2>
           </div>
 
           <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -82,7 +82,7 @@ const AddActivity = () => {
                     className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     onClick={handleSubmit}
                   >
-                    Add Student Details
+                    Add Class Details
                   </button>
                 </div>
               </form>
