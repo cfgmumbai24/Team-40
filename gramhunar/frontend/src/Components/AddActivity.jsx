@@ -19,6 +19,7 @@ const AddActivity = () => {
       <>
         <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <img className="mx-auto h-20 w-auto" src="https://www.gramurja.org/assets/images/logo/Gram%20Urja%20logo.png" alt="Gram Urja" />
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create an activity</h2>
           </div>
 
