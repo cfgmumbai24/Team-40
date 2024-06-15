@@ -4,6 +4,7 @@ import Login from "./Components/Login";
 import Student from "./Components/Student";
 import Class from "./Components/Class";
 import AddActivity from "./Components/AddActivity";
+import Activities from "./Components/Activities";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
         <Route path="/dashboard/student/:id" element={<Student />} />
         <Route path="/dashboard/class/:id" element={<Class />} />
         <Route path="/add-activity" element={<AddActivity />} />
+        <Route path="/activities" element={<Activities />} />
       </Routes>
     </>
   );
