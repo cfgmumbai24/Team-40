@@ -2,8 +2,21 @@ import Navbar from "./Navbar";
 
 import schools from "../../data/schools";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+// let schools = [];
 
 const Schools = () => {
+  // const [schools, setSchools] = useState([]);
+  // useEffect(() => {
+  //   const fetchdata = async () => {
+  //     const response = await fetch("http://192.168.90.56:5000/school");
+  //     const parsedData = await response.json();
+  //     setSchools(parsedData.data);
+  //     console.log("hello", schools);
+  //   };
+  //   fetchdata();
+  // }, []);
   return (
     <>
       <Navbar />
