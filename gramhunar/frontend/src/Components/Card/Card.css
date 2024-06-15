@@ -1,0 +1,25 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for the card */
+    box-sizing: border-box;
+  }
+  
+  .card-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-subheading {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
