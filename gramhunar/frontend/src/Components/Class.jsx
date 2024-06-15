@@ -1,4 +1,12 @@
+import React from 'react'
+import Navbar from './Navbar'
+
 const Class = () => {
-  return <div>Class</div>;
-};
-export default Class;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  )
+}
+
+export default Class
