@@ -12,9 +12,10 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import base64
+import io
 
 # Define paths to the directories
-main_dir = 'C://Users//hp//OneDrive//Desktop//goats//dataset'
+main_dir = './dataset/'
 goat_pox_dir = os.path.join(main_dir, 'goatpox')
 lumps_dir = os.path.join(main_dir, 'lumps')
 
