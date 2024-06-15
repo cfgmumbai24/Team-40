@@ -1,4 +1,4 @@
 const Student = () => {
-  return <div>Student</div>;
+  return <></>;
 };
 export default Student;

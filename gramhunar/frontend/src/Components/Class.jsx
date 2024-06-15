@@ -1,12 +1,9 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import { useParams } from "react-router-dom";
 
 const Class = () => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  )
-}
+  <></>;
+};
 
-export default Class
+export default Class;
