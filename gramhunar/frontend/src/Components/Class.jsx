@@ -8,6 +8,7 @@ const Class = () => {
     <div>
       <Navbar />
       <Sidebar />
+      
     </div>
   )
 }
