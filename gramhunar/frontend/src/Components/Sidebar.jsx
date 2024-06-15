@@ -4,7 +4,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1 className="sidebar-heading">Main</h1>
+
       <hr className="sidebar-divider" />
       <ul className="sidebar-list">
         <li className="sidebar-item">Classes</li>
@@ -16,6 +16,7 @@ const Sidebar = () => {
         <li className="sidebar-item">Calendar</li>
         <li className="sidebar-item">Charts</li>
       </ul>
+      <hr className="sidebar-divider" />
       <ul className="sidebar-list">
         <li className="sidebar-item">Settings</li>
       </ul>
