@@ -7,6 +7,7 @@ import Classes from "./Components/Classes";
 import AddActivity from "./Components/AddActivity";
 import Activities from "./Components/Activities";
 import Schools from "./Components/Schools";
+import LinkActivity from "./Components/LinkActivity";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
         <Route path="/dashboard/students/:id" element={<Student />} />
         <Route path="/add-activity" element={<AddActivity />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/linkactivity" element={<LinkActivity/>} />
       </Routes>
     </>
   );
