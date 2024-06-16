@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:number_editing_controller/parsed_number_format/text_controller.dart';
 import 'package:user/Models/healthModel.dart';
 import 'package:user/controllers/mlpost.dart';
+import 'package:user/view/pages/Result.dart';
 import 'package:user/view/widgets/save_and_open_pdf.dart';
 import 'package:user/view/widgets/simple_pdf_api.dart';
 
@@ -185,6 +186,10 @@ class _HealthCheckPageState extends State<HealthCheckPage> {
       _res = result;
       _isLoading = false;
     });
+          Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => Result(res:_res)),
+);
   },
   style: ElevatedButton.styleFrom(
     backgroundColor:  Colors.black

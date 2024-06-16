@@ -43,7 +43,8 @@ class SimplePdfApi{
       required String sneezing,
       required String coatChange,
     }) async{
-      String? gemResponse=await getResponse(name: name, weight: weight, height: height, fever: fever, nose: nose, lathargic: lathargic, diarrhea: diarrhea, sneezing: sneezing, coatChange: coatChange);
+      // String? gemResponse=await getResponse(name: name, weight: weight, height: height, fever: fever, nose: nose, lathargic: lathargic, diarrhea: diarrhea, sneezing: sneezing, coatChange: coatChange);
+      String? gemResponse="This is a medical report for a goat named ${name}.\n The goat weighs ${weight} and has a height of ${height} .\n The goat has been exhibiting the following symptoms:\n fever - ${fever},\n running nose - ${nose},\n lethargy - ${lathargic},\n diarrhea - ${diarrhea},\n sneezing - ${sneezing},\n and coat change - ${coatChange}.";
       // String text=markdownToPlainText(gemResponse);
       final pdf.Document doc=pdf.Document(); 
       doc.addPage(
