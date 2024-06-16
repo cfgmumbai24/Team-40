@@ -1,7 +1,7 @@
 const pool = require("../db");
 
 exports.createActivity = async (req, res) => {
-    const { name, description, numeric_weightage,literature_weightage,emotional_weightage } = req.body;
+    const {id, name, description, numeric_weightage,literature_weightage,emotional_weightage } = req.body;
   
     try {
       const sql = `INSERT INTO activities (id, name, description, numeric_weightage,literature_weightage,emotional_weightage) VALUES (?, ? ,? ,?, ?, ?)`;
@@ -10,6 +10,7 @@ exports.createActivity = async (req, res) => {
       res.status(201).json({
         status: 'success',
         data: {
+          id,
           name,
           description,
           numeric_weightage,
@@ -22,6 +23,7 @@ exports.createActivity = async (req, res) => {
       res.status(500).json({ error: 'Internal server error' });
     }
 };
+
 
 exports.getAll = async (req, res) => {
       try {

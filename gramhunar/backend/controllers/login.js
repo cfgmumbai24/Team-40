@@ -15,11 +15,13 @@ exports.login = async (req, res) => {
         }
 
         const user = rows[0];
-        const tId = "null";
+        let tId = "null";
         if(user.access_level === 'teacher'){
-            const sqlQuery = "SELECT * FROM teachers WHERE userName=?";
-            const rows = await pool.query(sqlQuery, [userName]); 
-            tId = rows.id;
+            console.log(user.access_level)
+            const sqlQuery = "SELECT * FROM teachers WHERE name = ?";
+            const rows = await pool.query(sqlQuery, [userName] ); 
+            tId = rows[0].id;
+            console.log(tId);
         }
         const access_level = user.access_level;
         if (user.password === password) {

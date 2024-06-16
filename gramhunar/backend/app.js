@@ -4,16 +4,13 @@ const dotenv = require('dotenv');
 const pool = require('./db');
 const activityRouter = require('./router/activityRouter');
 const activityController = require('./controllers/activityController');
-// const adminRouter = require('./router/adminRouter');
-// const classRouter = require('./router/classRouter');
+const teacherRouter = require('./router/teacherRouter')
 const classRouter = require('./router/classRouter');
 const stduentRouter = require('./router/studentRouter');
 const loginRouter = require('./router/loginRouter');
 const loginController = require('./controllers/login')
 // const  parentRouter = require('./router/parentRouter');
 const schoolRouter = require('./router/schoolRouter');
-// const appError = require('project/appError.js');
-
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -26,10 +23,11 @@ app.use(cors({
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use('/login',loginRouter);
 app.use('/school', schoolRouter);
 app.use('/activity', activityRouter);
 app.use('/classes', classRouter);
 app.use('/students', stduentRouter);
-
+app.use('/teachers', teacherRouter);
 module.exports = app;
