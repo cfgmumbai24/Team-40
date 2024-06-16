@@ -3,6 +3,6 @@ CREATE TABLE activities_and_classes (
   date DATETIME,
   activity_id INTEGER,
   class_id INTEGER,
-  FOREIGN KEY (activity_id) REFERENCES activities(id),
-  FOREIGN KEY (class_id) REFERENCES classes(id)
+  CONSTRAINT FK_Activities_and_classesActivity FOREIGN KEY (activity_id) REFERENCES activities(id),
+  CONSTRAINT FK_Activities_and_classesClass FOREIGN KEY (class_id) REFERENCES classes(id)
 );

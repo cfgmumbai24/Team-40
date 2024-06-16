@@ -15,12 +15,20 @@ exports.login = async (req, res) => {
         }
 
         const user = rows[0];
-        
+        const tId = "null";
+        if(user.access_level === 'teacher'){
+            const sqlQuery = "SELECT * FROM teachers WHERE userName=?";
+            const rows = await pool.query(sqlQuery, [userName]); 
+            tId = rows.id;
+        }
+        const access_level = user.access_level;
         if (user.password === password) {
-            //if(user.access_level === 'admin')
             res.status(200).json({
                 status: 'success',
-                data: user.access_level
+                data: {
+                    access_level,
+                    tId
+                }
             });
         } else {
             res.status(401).json({
