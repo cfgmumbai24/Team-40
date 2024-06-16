@@ -8,7 +8,7 @@ import numpy as np
 
 
 # Load the CSV dataset
-file_path = 'C://Users//hp//OneDrive//Desktop//goats//goat_health_dataset.csv'  # Replace with your actual file path
+file_path = './goat_health_dataset.csv'  # Replace with your actual file path
 df = pd.read_csv(file_path)
 
 # Display the first few rows of the dataset for verification
