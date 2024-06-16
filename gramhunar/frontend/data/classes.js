@@ -1,22 +1,22 @@
 export default [
   {
-    classId: "p489qn",
+    classId: "1",
     name: "Class 1",
   },
   {
-    classId: "nr489",
+    classId: "2",
     name: "Class 2",
   },
   {
-    classId: "3r7n89",
+    classId: "3",
     name: "Class 3",
   },
   {
-    classId: "p4f768",
+    classId: "4",
     name: "Class 4",
   },
   {
-    classId: "pve0m89",
+    classId: "5",
     name: "Class 5",
   },
 ];

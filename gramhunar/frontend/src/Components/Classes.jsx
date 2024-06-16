@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import classes from "../../data/classes";
 import Navbar from "./Navbar";
+import { useEffect, useState } from "react";
 
 const Classes = () => {
   const schoolId = localStorage.getItem("school");
+  // const [classes, setClasses] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetch('');
+  //   };
+  // }, []);
   return (
     <>
       <Navbar />
@@ -11,7 +18,7 @@ const Classes = () => {
         {classes.map((oneClass) => {
           return (
             <>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  " key={oneClass.classId}>
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow" key={oneClass.classId}>
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -25,6 +32,9 @@ const Classes = () => {
                   </a>
                   <p class="mb-3 font-normal text-gray-700 "></p>
                   <Link
+                    onClick={() => {
+                      localStorage.setItem("classId", oneClass.classId);
+                    }}
                     to={`/schools/${schoolId}/classes/${oneClass.classId}`}
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >

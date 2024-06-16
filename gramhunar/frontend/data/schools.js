@@ -1,42 +1,42 @@
 export default [
   {
-    schoolId: "b7pmq3489ct7n",
+    schoolId: "1",
     schoolName: "The JPMC School",
   },
   {
-    schoolId: "a8klq4587dr5m",
+    schoolId: "2",
     schoolName: "Greenwood High",
   },
   {
-    schoolId: "c9nlr5698es8o",
+    schoolId: "3",
     schoolName: "Sunnydale School",
   },
   {
-    schoolId: "d0mpr6709ft9p",
+    schoolId: "4",
     schoolName: "Riverside Academy",
   },
   {
-    schoolId: "e1nqs7810gu1q",
+    schoolId: "5",
     schoolName: "Mountainview High",
   },
   {
-    schoolId: "f2ort8921hv2r",
+    schoolId: "6",
     schoolName: "Lakeside Elementary",
   },
   {
-    schoolId: "g3psu9032iw3s",
+    schoolId: "7",
     schoolName: "Valley Forge School",
   },
   {
-    schoolId: "h4qtv0143jx4t",
+    schoolId: "8",
     schoolName: "Parkside School",
   },
   {
-    schoolId: "i5ruw1254ky5u",
+    schoolId: "9",
     schoolName: "Brookfield School",
   },
   {
-    schoolId: "j6svx2365lz6v",
+    schoolId: "10",
     schoolName: "Hillcrest High",
   },
 ];
